@@ -1,4 +1,4 @@
-package com.yakticus.goggles
+package goggles
 
 
 package object api {

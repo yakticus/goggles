@@ -9,6 +9,7 @@ lazy val goggles = crossProject
     autoCompilerPlugins := true,
     libraryDependencies ++= Seq(
       "com.lihaoyi" %%% "scalarx" % "0.2.8",
+      "com.lihaoyi" %%% "scalatags" % "0.5.2",
       "com.lihaoyi" %%% "upickle" % "0.3.0"
     ),
     licenses := Seq("Apache 2" -> url("http://www.apache.org/licenses/LICENSE-2.0")),

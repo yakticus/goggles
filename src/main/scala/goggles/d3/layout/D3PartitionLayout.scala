@@ -2,6 +2,7 @@ package goggles.d3.layout
 
 import goggles.d3._
 import goggles.api.layout._
+import goggles.upicklejs
 
 import scala.scalajs.js
 import scala.scalajs.js.Dynamic.literal
@@ -37,7 +38,8 @@ class D3PartitionLayout extends PartitionLayout {
   override def layout(root: Tree): Hierarchy[CoordinateAndExtent] = {
     treeStructure = parentAndChildrenMap(root, depth = 0, None, Map.empty)
     computeLayout[CoordinateAndExtent](layout, root, treeStructure) {
-      node => upicklejs.read[CoordinateAndExtent](literal(x = node.x, y = node.y, dx = node.dx, dy = node.dy))
+      node => CoordinateAndExtent(x = node.x.asInstanceOf[Double], y = node.y.asInstanceOf[Double],
+      dx = node.dx.asInstanceOf[Double], dy = node.dy.asInstanceOf[Double])
     }
   }
 

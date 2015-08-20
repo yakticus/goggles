@@ -17,3 +17,17 @@ Make sure to include sonatype snapshot repo:
 ```
 resolvers += Resolver.sonatypeRepo("snapshots")
 ```
+
+## examples
+
+```
+$ sbt
+> project examples
+> ~fastOptJS
+```
+
+Navigate in your browser to:
+
+`http://localhost:12345/examples/target/scala-2.11/classes/index-dev.html`
+
+You can browse the examples under the `examples` subproject.

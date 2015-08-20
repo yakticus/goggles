@@ -1,3 +1,5 @@
+package goggles
+
 import upickle.{default => upickle}
 
 import scala.scalajs.js

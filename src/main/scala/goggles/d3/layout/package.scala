@@ -1,6 +1,7 @@
 package goggles.d3
 
 import goggles.api.layout._
+import goggles.upicklejs
 
 import scala.scalajs.js
 

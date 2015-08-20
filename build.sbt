@@ -49,6 +49,5 @@ lazy val examples = project.in(file("examples"))
     workbenchSettings,
     scalaVersion := "2.11.6",
     resolvers += Resolver.sonatypeRepo("snapshots"),
-    libraryDependencies ++= Seq()
-//    updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
+    bootSnippet := "example.d3.ForceDirectedGraph().main(document.getElementById('container'));"
   )

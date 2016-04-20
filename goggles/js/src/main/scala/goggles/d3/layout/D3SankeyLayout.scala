@@ -38,9 +38,7 @@ class D3SankeyLayout extends SankeyLayout {
     this
   }
 
-  override def link(): IndexedSeq[Rx[String]] = {
-
-  }
+  override def link(): IndexedSeq[Rx[String]] = ???
 
   override def nodeWidth(width: Int): SankeyLayout = {
     layout.nodeWidth(width)
